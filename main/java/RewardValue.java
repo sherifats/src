@@ -6,7 +6,7 @@ public class RewardValue {
     private int miles;
 
     //two constructors overriden 
-    public RewardValue (double cash){
+    public RewardValue(double cash){
         this.cash = cash;
     }
     public RewardValue(int miles){
@@ -15,12 +15,15 @@ public class RewardValue {
     
     //METHODS
     public double getCashValue(){
-        int reward;
-        reward = (miles * 0.0035);
+        double reward;
+        double m = miles;
+        reward = (m * 0.0035);
+        return reward;
     }
 
     public int getMilesValue(){
         int reward;
         reward = (int) (cash / 0.0035);
+        return reward;
     }
 }
