@@ -1,29 +1,29 @@
-import java.util.Scanner;
 
 public class RewardValue {
 
-    private double cash;
-    private int miles;
+    private double cashValue;
+    private int milesValue;
 
-    //two constructors overriden 
-    public RewardValue(double cash){
-        this.cash = cash;
+    // TWO CONSTRUCTORS (overloaded)
+    //takes in cash value
+    public RewardValue(double cashValue){//to avoid error need boolean
+        this.cashValue = cashValue;
+        this.milesValue = milesValue;
     }
-    public RewardValue(int miles){
-        this.miles = miles;
+    //takes in miles value
+    public RewardValue(int milesValue){
+        this.milesValue = milesValue;
+        this.cashValue = cashValue;
     }
     
     //METHODS
-    public double getCashValue(){
-        double reward;
-        double m = miles;
-        reward = (m * 0.0035);
-        return reward;
-    }
 
+    //miles to cash
+    public double getCashValue(){
+        return (milesValue * 0.0035);
+    }
+    //cash to miles
     public int getMilesValue(){
-        int reward;
-        reward = (int) (cash / 0.0035);
-        return reward;
+        return (int)(cashValue / 0.0035); 
     }
 }
