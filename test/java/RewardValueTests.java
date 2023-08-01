@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RewardValueTests {
 
+
+
     @Test
     void create_with_cash_value() {
         double cashValue = 100;
