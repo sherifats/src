@@ -14,7 +14,8 @@ public class RewardValue {
         this.cashValue = toCash(milesValue);
     }
     
-    //METHODS
+    //METHODS//
+
     private static double toCash(int milesValue){
         return  milesValue * ratio;
     }
